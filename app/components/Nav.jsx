@@ -9,6 +9,8 @@ var Nav = React.createClass({
           <Link to="/">Get Weather</Link>
           <br/>
           <Link to="/about">About</Link>
+          <br/>
+          <Link to="/examples">Examples</Link>
         </div>
       );
     }

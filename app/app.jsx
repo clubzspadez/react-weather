@@ -7,12 +7,14 @@ var Main = require('Main');
 var Nav = require('Nav');
 var Weather = require('Weather');
 var About = require('About');
+var Examples = require('Examples');
 
 
 ReactDOM.render(
     <Router history={hashHistory}>
       <Route path="/" component={Main}>
         <Route path="about" component={About}/>
+        <Route path="examples" component={Examples}/>
         <IndexRoute component={Weather}/>
       </Route>
     </Router>,
