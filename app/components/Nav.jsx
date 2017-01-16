@@ -1,16 +1,16 @@
 var React = require('react');
-var {Link} = require('react-router');
+var {Link, IndexLink} = require('react-router');
 
 var Nav = React.createClass({
     render: function(){
       return (
         <div>
           <h2>This is nav component</h2>
-          <Link to="/">Get Weather</Link>
+          <IndexLink to="/" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Get Weather</IndexLink>
           <br/>
-          <Link to="/about">About</Link>
+          <IndexLink to="/about" activeClassName="active" activeStyle={{fontWeight: 'bold'}} >About</IndexLink>
           <br/>
-          <Link to="/examples">Examples</Link>
+          <IndexLink to="/examples" activeClassName="active" activeStyle={{fontWeight: 'bold'}}>Examples</IndexLink>
         </div>
       );
     }
